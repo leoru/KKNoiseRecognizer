@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KKNoiseRecognizer.h"
+@interface ViewController : UIViewController <KKNoiseRecornizerDelegate>
 
-@interface ViewController : UIViewController
+
+- (IBAction)stop:(id)sender;
+- (IBAction)start:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *levelMeter;
 
 @end

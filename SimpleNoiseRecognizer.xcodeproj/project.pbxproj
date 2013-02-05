@@ -23,6 +23,8 @@
 		A42B9E0016C0E42F0040D692 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A42B9DDB16C0E42F0040D692 /* Foundation.framework */; };
 		A42B9E0816C0E42F0040D692 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A42B9E0616C0E42F0040D692 /* InfoPlist.strings */; };
 		A42B9E0B16C0E4300040D692 /* SimpleNoiseRecognizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B9E0A16C0E4300040D692 /* SimpleNoiseRecognizerTests.m */; };
+		A42B9E1716C0E4730040D692 /* KKNoiseRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A42B9E1516C0E4730040D692 /* KKNoiseRecognizer.m */; };
+		A42B9E1916C0E6270040D692 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A42B9E1816C0E6270040D692 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,9 @@
 		A42B9E0716C0E42F0040D692 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A42B9E0916C0E4300040D692 /* SimpleNoiseRecognizerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleNoiseRecognizerTests.h; sourceTree = "<group>"; };
 		A42B9E0A16C0E4300040D692 /* SimpleNoiseRecognizerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleNoiseRecognizerTests.m; sourceTree = "<group>"; };
+		A42B9E1516C0E4730040D692 /* KKNoiseRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KKNoiseRecognizer.m; path = KKNoiseRecognizer/KKNoiseRecognizer.m; sourceTree = "<group>"; };
+		A42B9E1616C0E4730040D692 /* KKNoiseRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKNoiseRecognizer.h; path = KKNoiseRecognizer/KKNoiseRecognizer.h; sourceTree = "<group>"; };
+		A42B9E1816C0E6270040D692 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A42B9E1916C0E6270040D692 /* AVFoundation.framework in Frameworks */,
 				A42B9DDA16C0E42F0040D692 /* UIKit.framework in Frameworks */,
 				A42B9DDC16C0E42F0040D692 /* Foundation.framework in Frameworks */,
 				A42B9DDE16C0E42F0040D692 /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +93,8 @@
 		A42B9DCD16C0E42F0040D692 = {
 			isa = PBXGroup;
 			children = (
+				A42B9E1816C0E6270040D692 /* AVFoundation.framework */,
+				A42B9E1416C0E43C0040D692 /* KKNoiseRecognizer */,
 				A42B9DDF16C0E42F0040D692 /* SimpleNoiseRecognizer */,
 				A42B9E0316C0E42F0040D692 /* SimpleNoiseRecognizerTests */,
 				A42B9DD816C0E42F0040D692 /* Frameworks */,
@@ -158,6 +166,15 @@
 				A42B9E0616C0E42F0040D692 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A42B9E1416C0E43C0040D692 /* KKNoiseRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				A42B9E1616C0E4730040D692 /* KKNoiseRecognizer.h */,
+				A42B9E1516C0E4730040D692 /* KKNoiseRecognizer.m */,
+			);
+			name = KKNoiseRecognizer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +290,7 @@
 				A42B9DE616C0E42F0040D692 /* main.m in Sources */,
 				A42B9DEA16C0E42F0040D692 /* AppDelegate.m in Sources */,
 				A42B9DF316C0E42F0040D692 /* ViewController.m in Sources */,
+				A42B9E1716C0E4730040D692 /* KKNoiseRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
